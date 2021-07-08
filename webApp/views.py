@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
-def vista1(request):
+def home(request):
 
-    return render(request, "webApp/vista1.html")
+    return render(request, "webApp/home.html")
 
 
 def vista2(request):

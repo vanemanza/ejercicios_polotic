@@ -18,8 +18,8 @@ from django.urls import path
 from webApp import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('vista1/', views.vista1, name="vista1" ),
+    path('admin/', admin.site.urls),    
+    path('', views.home, name="home"),
     path('vista2/', views.vista2, name="vista2" ),
     path('vista3/', views.vista3, name="vista3" ),
 ]    
