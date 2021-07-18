@@ -16,13 +16,13 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pt-md-3">
     <div class="container">
-      <a class="navbar-brand" href="#">Portal Web</a>
+      <a class="navbar-brand" >Portal Web</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
@@ -43,13 +43,15 @@
   {% block content %}  {% endblock %}  
 
   <!-- Footer -->
-  <footer class="footer text-faded text-center py-5">
-            
-      <p > Hecho x mi - Junio 2021</p>
-    
-</footer>
+ 
+<nav class="navbar fixed-bottom  bg-light">
+  <div class="container d-flex justify-content-center mt-2 ">
+    <p class="text-center"  >Hecho x mi - Junio 2021</p>
+  </div>
+</nav>
 
 <!-- Bootstrap -->
+<script src="{% static 'proyectoWebApp/vendor/jquery/jquery.min.js' %}"></script>   
 <script src="{% static 'webApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
   
