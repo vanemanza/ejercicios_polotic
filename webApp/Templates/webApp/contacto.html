@@ -1,0 +1,39 @@
+{% extends "webApp/base.html" %}  
+
+{% load static %} 
+
+{% block content %} 
+
+    <div class="container ">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>             
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>             
+            </div>
+
+            <div class="form col-12 mb-3">
+                <label for="floatingInput">Email address</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                
+              </div>
+           
+            <div class="form col-12">
+                <label for="floatingTextarea">Comentarios</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                
+              </div>
+           
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit" style="margin:15px;">Enviar</button>
+            </div>
+          </form>
+     
+    </div>
+  
+
+
+    {% endblock %}  

@@ -1,16 +1,19 @@
-{% extends "webApp/base.html" %} 
+{% extends "webApp/base.html" %}  
+
+{% load static %} 
 
 {% block content %} 
+
+    <div class="container">
+
+        <div class="row text-center">
+            <img src="{% static 'webApp/img/asustado.jpeg' %}" class="align-items-lg-center" alt="..." style="width: 50%;">
+            <p>Et nam provident assumenda modi! Cumque, eos quam quibusdam illo iste voluptas, ducimus modi, accusantium consectetur odit laboriosam perspiciatis excepturi quia sunt.</p>
+          </div>
      
-<div class="container home">
-    <div class="row">
-      <h2 class="col">Inicio</h2>      
     </div>
-    <div class="row">
-      <p class="col-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas perferendis corporis nostrum maiores neque eos, eum dolorem voluptates possimus autem? Perferendis dolor impedit numquam facilis qui sint quisquam. Vitae, excepturi.</p>
-      
-    </div>
-  </div>
+  
 
 
-{% endblock %} 
+    {% endblock %}  
+

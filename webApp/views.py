@@ -4,12 +4,12 @@ def home(request):
 
     return render(request, "webApp/home.html")
 
+def productos(request):
 
-def vista2(request):
-    
-    return render(request, "webApp/vista2.html")
+    return render(request, "webapp/productos.html")
 
-def vista3(request):
-    
-    return render(request, "webApp/vista3.html")
+def contacto(request):
+
+    return render(request, "webApp/contacto.html")    
+
 
